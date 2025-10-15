@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus - Faire le lien</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@330;400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0d1f9a 20%, #000000 60%);
+      color: #fff;
+      font-family: "Trebuchet MS", Helvetica, sans-serif;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden; /* ⛔ Empêche la bande sur le côté */
+      padding: 20px 0;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+
+    .logo {
+      max-width: 800px;
+      width: 100%;
+      margin-bottom: 1.5rem;
+      padding: 0 20px;
+    }
+
+    .contact {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .contact a {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 330;
+      font-size: 2.7rem;
+      letter-spacing: 0.5px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #1da4b9;
+      border-color: #1da4b9;
+    }
+
+    .mentions {
+      position: absolute;
+      bottom: 30px;
+      right: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .mentions a {
+      color: #aaa;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    .mentions a:hover {
+      color: #1da4b9;
+      border-color: #1da4b9;
+    }
+
+    @media (max-width: 768px) {
+      .mentions {
+        right: 0;
+        left: 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <img src="logo.png" alt="Logo" class="logo">
+    <p class="contact"><a href="mailto:contact@nexus-influence.com">contact@nexus-influence.com</a></p>
+  </div>
+
+  <div class="mentions">
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+</body>
+</html>
